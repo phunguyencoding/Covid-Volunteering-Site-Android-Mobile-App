@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225922110847",
+    "project_id": "tidal-vim-310008",
+    "storage_bucket": "tidal-vim-310008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225922110847:android:f1f3760dda09f666beb64a",
+        "android_client_info": {
+          "package_name": "com.example.cosc2657_a2_s3811248_nguyentranphu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225922110847-g19hc9mo3j9l2ho5nojr06f0ebse70h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0dF4iTVSek9HhBqbGVt0k5jmsxIdp_F0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225922110847-g19hc9mo3j9l2ho5nojr06f0ebse70h7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

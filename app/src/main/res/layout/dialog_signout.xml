@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/dialog_background"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_title_background"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Sign out"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title"
+            tools:layout_editor_absoluteX="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Do you want to signout now?"
+                android:textColor="@color/black"
+                android:textSize="17sp"></TextView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <android.widget.Button
+        android:id="@+id/no_button"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/dialog_title_background"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="No"
+        app:layout_constraintBottom_toBottomOf="@id/layout_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_dialog">
+    </android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/yes_button"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/dialog_title_background"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Yes"
+        app:layout_constraintBottom_toBottomOf="@id/layout_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_dialog">
+    </android.widget.Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
